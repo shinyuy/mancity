@@ -130,8 +130,7 @@ export default class Text extends Component {
                 {this.animatePlayer()}
                 {this.animateNumber()}
                 {this.animateFirst()}
-                {this.animateSecond()}
-                
+                {this.animateSecond()}   
             </div>
         )
     }
