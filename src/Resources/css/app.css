@@ -503,6 +503,10 @@ footer .footer_discl {
     color: #4e4e4e;
 }
 
+button{
+    cursor: pointer;
+}
+
 .promotion_wrapper .enroll_discl {
     font-weight: 300;
     font-size: 12px;
