@@ -171,7 +171,7 @@ export default class Addeditmatch extends Component {
         const newFormdata = {...this.state.formdata}
         const newElement = {...newFormdata[element.id]}
 
-        newElement.value = element.event.target.value;
+        newElement.value = element.event.target.value
 
         let validData = validate(newElement)
         newElement.valid = validData[0];
@@ -196,16 +196,15 @@ export default class Addeditmatch extends Component {
                  newFormdata[key].valid = true;
              }
              if(key === 'local' || key === 'away'){
-                 newFormdata[key].config.options = teamOptions;
+                 newFormdata[key].config.options = teamOptions
              }
          }
-         
+         console.log(newFormdata);
          this.setState({
              matchId,
              formType: type,
              formdata: newFormdata,
-             teams,
-             
+             teams
          })
     }
 
