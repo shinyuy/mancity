@@ -133,7 +133,7 @@ export default class Addeditplayers extends Component {
                             }, playerId, 'Edit player', '')
                         })
                 })
-        }
+        } 
     }
 
     updateForm(element, content = '') {
