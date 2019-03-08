@@ -1,9 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Manchester City FC
+This is a practice project for the Manchester city FC(a football or soccer club), using React and with Firebase.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
+To take a look at the project, do the following:
+### `git clone https://github.com/shinyuy/mancity.git`
+### `cd mancity`
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.<br>
