@@ -8,6 +8,7 @@ import Privateroutes from './components/authroutes/Privateroutes';
 import Publicroutes from './components/authroutes/Publicroutes';
 import Theteam from './components/the team/index';
 import Thematches from './components/the matches/index';
+import Notfound from './components/utils/Notfound';
 
 import Dashboard from './components/admin/Dashboard';
 import Adminmatches from './components/admin/matches/index';
@@ -28,11 +29,12 @@ const Routes = (props) => {
           <Privateroutes {...props} exact path='/admin_matches/edit_match' component={Addeditmatch} />
           <Privateroutes {...props} exact path='/admin_matches/edit_match/:id' component={Addeditmatch} />
           <Privateroutes {...props} exact path='/admin_matches' component={Adminmatches} />
-          <Privateroutes {...props} restricted={true} exact path='/dashboard' component={Dashboard} />
           <Publicroutes {...props} restricted={true} path='/sign_in' exact component={Signin} />
+          <Privateroutes {...props} restricted={true} exact path='/dashboard' component={Dashboard} />
           <Publicroutes {...props} restricted={false} path='/the_matches' exact component={Thematches} />
           <Publicroutes {...props} restricted={false} path='/the_team' exact component={Theteam} />
           <Publicroutes {...props} restricted={false} path='/' exact component={Home} />
+          <Publicroutes {...props} restricted={false}  exact component={Notfound} />
         </Switch>
       </Layout>
     </div>
